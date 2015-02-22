@@ -23,7 +23,7 @@ $db = {
 
 file { $keystore_file:
 	mode => 0644,
-	source => ".keystore",
+	source => "/.keystore",
 }
 class { "tomcat::server":
 	connectors => [$ssl_connector],
