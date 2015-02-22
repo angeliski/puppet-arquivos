@@ -23,7 +23,7 @@ $db = {
 
 file { $keystore_file:
 	mode => 0644,
-	source => "/home/ubuntu/puppet-arquivos/.keystore",
+	source => "/home/ubuntu/puppet-arquivos/manifests/.keystore",
 }
 class { "tomcat::server":
 	connectors => [$ssl_connector],
